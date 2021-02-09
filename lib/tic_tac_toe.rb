@@ -57,66 +57,67 @@ class TicTacToe
       return counter
   end 
   
-  def current_player
-    if turn_count(@board) % 2 == 0 
-      "X"
-    else 
-      "O"
-    end
-  end 
+#   def current_player
+#     if turn_count(@board) % 2 == 0 
+#       "X"
+#     else 
+#       "O"
+#     end
+#   end 
   
-  def turn
-    puts "Please enter 1-9:"
-  user_input = gets.strip
-  index = input_to_index(@user_input)
-  if valid_move?(@board,@index) == true
-    move(board, index, current_player(@board))
-  display_board(@board)
-else
-  turn(@board)
-  end 
-  end 
+#   def turn
+#     puts "Please enter 1-9:"
+#   user_input = gets.strip
+#   index = input_to_index(@user_input)
+#   if valid_move?(@board,@index) == true
+#     move(board, index, current_player(@board))
+#   display_board(@board)
+# else
+#   turn(@board)
+#   end 
+#   end 
   
-  def won?
-    @@WIN_COMBINATIONS.detect do |i|
-  @board[i[0]] == @board[i[1]] &&
-  @board[i[1]] == @board[i[2]] &&
-  position_taken?(@board,i[0]) 
-  end 
-  end 
+#   def won?
+#     @@WIN_COMBINATIONS.detect do |i|
+#   @board[i[0]] == @board[i[1]] &&
+#   @board[i[1]] == @board[i[2]] &&
+#   position_taken?(@board,i[0]) 
+#   end 
+#   end 
   
-  def full?
-    @board.all?  do |i|
-    #ask if i is equal to X or O 
-    i == "X" || i == "O"  
-    end
-  end 
+#   def full?
+#     @board.all?  do |i|
+#     #ask if i is equal to X or O 
+#     i == "X" || i == "O"  
+#     end
+#   end 
   
-  def draw?(board)
-    !won?(@board) && full?(@board)
-  end 
+#   def draw?(board)
+#     !won?(@board) && full?(@board)
+#   end 
   
-  def over?(board)
-    won?(@board)  || draw?(@board) || full?(@board)  
-  end 
+#   def over?(board)
+#     won?(@board)  || draw?(@board) || full?(@board)  
+#   end 
   
-    def winner(board)
-    won=won?(@board)
-      if won 
-        @board[won[0]]
-    end  
-  end 
+#     def winner(board)
+#     won=won?(@board)
+#       if won 
+#         @board[won[0]]
+#     end  
+#   end 
   
-  def play 
-    #until the game is over, keep repeating turns
-    until over?(@board)
-      turn(@board)
-    end 
-  #if there is a draw, put cats game, else put the winner
-    if draw?(@board)
-    puts "Cat's Game!"
-    else 
-      puts "Congratulations #{winner(@board)}!"  
-    end 
-  end   
-end   
+#   def play 
+#     #until the game is over, keep repeating turns
+#     until over?(@board)
+#       turn(@board)
+#     end 
+#   #if there is a draw, put cats game, else put the winner
+#     if draw?(@board)
+#     puts "Cat's Game!"
+#     else 
+#       puts "Congratulations #{winner(@board)}!"  
+#     end 
+#   end   
+# end   
+
