@@ -43,7 +43,7 @@ class TicTacToe
     # else 
     #     false
     # end
-   position_taken?.to_i.between?(1,9) and not position_taken?(board, position_taken?.to_i - 1)
+  # position_taken?.to_i.between?(1,9) and not position_taken?(board, position_taken?.to_i - 1)
   end
   
   
