@@ -83,7 +83,7 @@ class TicTacToe
     end
   end 
   
-  def draw?(board)
+  def draw?
     !won?(@board) && full?(@board)
   end 
   
