@@ -52,8 +52,9 @@ class TicTacToe
       if @board == "X" || @board == "O"
         counter += 1
       end 
+       binding.pry
       return counter
-      binding.pry
+     
     end 
   end 
   
