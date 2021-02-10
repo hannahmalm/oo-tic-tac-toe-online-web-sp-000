@@ -54,7 +54,6 @@ class TicTacToe
       end 
        binding.pry
       return counter
-     
     end 
   end 
   
