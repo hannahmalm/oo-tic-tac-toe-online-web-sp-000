@@ -72,7 +72,7 @@ class TicTacToe
     WIN_COMBINATIONS.detect do |i|
     @board[i[0]] == @board[i[1]] &&
     @board[i[1]] == @board[i[2]] &&
-    position_taken?(@board,index)
+    position_taken?(index)
     end 
   end 
   
