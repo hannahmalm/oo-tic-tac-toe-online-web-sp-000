@@ -76,12 +76,12 @@ class TicTacToe
     end 
   end 
   
-#   def full?
-#     @board.all?  do |i|
-#     #ask if i is equal to X or O 
-#     i == "X" || i == "O"  
-#     end
-#   end 
+  def full?
+    @board.all?  do |i|
+    #ask if i is equal to X or O 
+    i == "X" || i == "O"  
+    end
+  end 
   
 #   def draw?(board)
 #     !won?(@board) && full?(@board)
