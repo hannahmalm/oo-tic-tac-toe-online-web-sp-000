@@ -52,8 +52,7 @@ class TicTacToe
 
   
   def current_player
-    binding.pry
-    if turn_count(@board) % 2 == 0 
+    if turn_count() % 2 == 0 
       "X"
     else 
       "O"
