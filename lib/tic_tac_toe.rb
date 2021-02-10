@@ -91,12 +91,12 @@ class TicTacToe
     won? || draw? || full? 
   end 
   
-#     def winner(board)
-#     won=won?(@board)
-#       if won 
-#         @board[won[0]]
-#     end  
-#   end 
+    def winner(board)
+    won=won?(@board)
+      if won 
+        @board[won[0]]
+    end  
+  end 
   
 #   def play 
 #     #until the game is over, keep repeating turns
