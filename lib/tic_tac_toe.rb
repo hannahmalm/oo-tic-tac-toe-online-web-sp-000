@@ -53,9 +53,9 @@ class TicTacToe
   
   def current_player(token)
     if turn_count(@board) % 2 == 0 
-      "O"
-    else 
       "X"
+    else 
+      "O"
     end
   end 
   
