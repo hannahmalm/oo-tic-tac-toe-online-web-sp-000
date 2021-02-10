@@ -73,7 +73,6 @@ class TicTacToe
     @board[i[0]] == @board[i[1]] &&
     @board[i[1]] == @board[i[2]] &&
     position_taken?(@board,i[0]) 
-    end 
   end 
   
 #   def full?
