@@ -100,11 +100,11 @@ class TicTacToe
   
   def play 
     #until the game is over, keep repeating turns
-    until over?(@board)
-      turn(@board)
+    until over?
+      turn
     end 
   #if there is a draw, put cats game, else put the winner
-    if draw?(@board)
+    if draw?
     puts "Cat's Game!"
     else 
       puts "Congratulations #{winner(@board)}!"  
